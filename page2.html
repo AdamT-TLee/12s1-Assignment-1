@@ -24,9 +24,7 @@
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
+    .card-img {
       -webkit-user-select: none;
       -moz-user-select: none;
       user-select: none;
@@ -37,9 +35,32 @@
         font-size: 3.5rem;
       }
     }
+
+    .blur {
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+    }
+
+    .invert {
+      -webkit-filter: invert();
+      filter: invert();
+    }
+
+    .shimmer {
+      mask: linear-gradient(-60deg, #000 30%, #000000a9, #000 70%) right/500% 100%;
+      animation: shimmer 2.5s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% {
+        mask-position: right
+      }
+      
+      100% {
+        mask-position: left
+      }
+    }
   </style>
-
-
 </head>
 
 <body>
@@ -53,7 +74,7 @@
               <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
               <circle cx="12" cy="13" r="4" />
             </svg>
-            <strong>Normal Cards</strong>
+            <strong>Filler Cards</strong>
           </a>
         </li>
         <li><a href="page2.html" class="navbar-brand d-flex align-items-center">
@@ -84,9 +105,12 @@
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Album example</h1>
-          <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the
-            creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+          <h1 class="fw-light">Mahdi Cards Series 1 Prismatics</h1>
+          <p class="lead text-body-secondary">
+            These cards are rumored to have been in circulation.<br>
+            What you see below are only recreations.<br>
+            Every tournament has banned these cards in case they are real.
+          </p>
         </div>
       </div>
     </section>
@@ -97,127 +121,61 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="images/Sigma_Aldaco_Colored.png" alt="Colored Sigma Aldaco" class="shimmer">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">
+                  <strong>Real Sigma Aldaco</strong><br>
+                  HP: 1000<br>
+                  MP: 100<br>
+                  Ability "Sigma Syntax"<br>
+                  (10 MP): Edits any card's ability to be any 100-character description the caster chooses
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <small class="text-body-secondary">
+                    <strong>Rarity:</strong> <br>
+                    Prismatic
+                  </small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="images/emo aldaco.png" alt="Emo Aldaco" class="shimmer">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">
+                  <strong>Emo Aldaco</strong><br>
+                  HP: 10<br>
+                  MP: 100<br>
+                  Ability "Soul-Quenching Leech Injection"<br>
+                  (30 MP): Injects a soul-quenching leech into a card, causing it to take 100 damage per round (excluding the round that it injected)
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <small class="text-body-secondary">
+                    <strong>Rarity:</strong> <br>
+                    Prismatic
+                  </small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="images/Sigma_Aldaco_Colored.png" alt="Amgis Ocadla" class="shimmer invert">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">
+                  <strong>Amgis Ocadla</strong><br>
+                  HP: -1000<br>
+                  MP: 100<br>
+                  Ability "Sigma Siphon"<br>
+                  (10 MP): Steals 50% of a card's HP, healing for the stolen HP<br>
+                  If this card reaches 0 HP, kill this card and play two more Amgis Ocadlas
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <small class="text-body-secondary">
+                    <strong>Rarity:</strong> <br>
+                    Prismatic
+                  </small>
                 </div>
               </div>
             </div>
@@ -225,63 +183,62 @@
 
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="images/cheese mouse.png" alt="Crazed Cheese Craver" class="shimmer">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">
+                  <strong>Crazed Cheese Craver</strong><br>
+                  HP: 500<br>
+                  MP: 0<br>
+                  Ability "Sigma Syntax"<br>
+                  (0 MP): Eats cheese, gaining 10 MP<br>
+                  Once killed, gives every ally card its stored MP<br>
+                  Each ally card uses their ability if the given MP can cover the ability cost
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <small class="text-body-secondary">
+                    <strong>Rarity:</strong> <br>
+                    Prismatic
+                  </small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="images/Supreme Saiyan Aldaco.png" alt="Supreme Saiyan Aldaco" class="shimmer">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">
+                  <strong>Supreme Saiyan Aldaco</strong><br>
+                  HP: 9999<br>
+                  MP: 9999<br>
+                  Ability "Sigma Scream"<br>
+                  (9999 MP): Allows the caster to play any sound of their choosing to loop for the rest of the game
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <small class="text-body-secondary">
+                    <strong>Rarity:</strong> <br>
+                    Prismatic
+                  </small>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
+              <img src="images/Ta.gif" alt="Locket Mahdi" class="shimmer">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">
+                  <strong>Locket Mahdi</strong><br>
+                  HP: 100<br>
+                  MP: 100<br>
+                  Ability "Git Merge"<br>
+                  (100 MP): Combines two cards into one card, but the caster must resolve conflicting abilities 
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
+                  <small class="text-body-secondary">
+                    <strong>Rarity:</strong> <br>
+                    Prismatic
+                  </small>
                 </div>
               </div>
             </div>
